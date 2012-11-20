@@ -1,0 +1,16 @@
+BEGIN observation_data TABLE  
+ nrow=12 ncol=4 columnlabels 
+ ObsName     ObsValue   GroupName     Weight
+P001T0000    33.8154    obsgp_oden    1.0
+P002T0000    29.9383    obsgp_oden    1.0
+P003T0000    28.4674    obsgp_oden    1.0
+P004T0000    30.9286    obsgp_oden    1.0
+P005T0000    24.7332    obsgp_oden    1.0
+P006T0000    31.5769    obsgp_oden    1.0
+P007T0000    27.3057    obsgp_oden    1.0
+P008T0000    29.3834    obsgp_oden    1.0
+P009T0000    27.8658    obsgp_oden    1.0
+P010T0000    30.4177    obsgp_oden    1.0
+P011T0000    28.5865    obsgp_oden    1.0
+P012T0000    27.4403    obsgp_oden    1.0
+ END observation_data 

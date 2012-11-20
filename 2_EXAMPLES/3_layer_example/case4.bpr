@@ -1,0 +1,1254 @@
+ 
+ 
+          bgaPEST RUN RECORD: CASE case4                                                                                                                                                                                                                                                           
+ Case Dimensions :-
+                    Number of Parameters:    4200
+              Number of Parameter Groups:       3
+                  Number of Observations:      36
+            Number of Observation Groups:       3
+ 
+ Model Command Line :-
+    modflow.bat                                       
+ Jacobian Command Line :-
+    modflow_adj.bat                                   
+ 
+ Model Interface Files:-
+    Template files:
+        three_layers.tpl                                                                                    
+    for model input files:
+        three_layers.mlt                                                                                    
+    Instruction files:
+        three_layers_hbs.ins                                                                                
+    for model ouput files:
+        three_layers.hbs                                                                                    
+    Jacobian Matrix Output File:
+        three_layers.jac                                                                                    
+    Jacobian Matrix Output Format:
+        ascii 
+ 
+ Algorithmic control variables:-
+    Structural Paramter Convergence
+        structural_conv:   1.0000E-08
+    Objective Function Convergence
+        phi_conv:   1.0000E-08
+    Outermost BGA Convergence
+        bga_conv:   1.0000E-06
+    Maximum Number of Structural Paramter Iterations
+        it_max_structural:         10
+    Maximum Number of Objective Function Iterations
+        it_max_phi:          5
+    Maximum Number of Outermost BGA Iterations
+        it_max_bga:         25
+    Linesearch Flag: [0] indicates no linesearch, [1] indicates perform linesarch
+        lns_flag:          1
+    Maximum Number of Linesearch Iterations
+        it_max_lns:          5
+    Logical Flag for storing Q Matrix
+        store_Q:     T
+    Form of theta covariance: [0] none, [1], diag, [2] full matrix
+        theta_cov_form:          0
+    Compression of Q0 matrix: [0] none - compute full Q0, [1], Q0 for each beta
+        Q_ compression_flag:          1
+    Derivatives mode: [0] External PEST Perturbations, [1] specified Jacobian command line
+        deriv_mode:          1
+    External derivatives calculated using file:-
+        modflow_adj.bat                                   
+    External derivatives read from file:-
+        three_layers.jac                                                                                    
+    External derivatives file format:-
+        ascii 
+ 
+    Parameter Anisotropy: [0] do not read parameter_anisotropy block, [1] do read block
+        par_anisotropy:          0
+ 
+       3 Beta Associations were defined:
+Variables for Beta Association:   1
+    Parameter number at which this Beta Association starts
+        Beta_start:          1
+    Toeplitz Flag
+        Toep_flag:          1
+    Number of Rows
+        Nrow:         40
+    Number of Columns
+        Ncol:         35
+    Number of Layers
+        Nlay:          1
+    Number of Parameters
+        Npar:       1400
+Variables for Beta Association:   2
+    Parameter number at which this Beta Association starts
+        Beta_start:       1401
+    Toeplitz Flag
+        Toep_flag:          1
+    Number of Rows
+        Nrow:         40
+    Number of Columns
+        Ncol:         35
+    Number of Layers
+        Nlay:          1
+    Number of Parameters
+        Npar:       1400
+Variables for Beta Association:   3
+    Parameter number at which this Beta Association starts
+        Beta_start:       2801
+    Toeplitz Flag
+        Toep_flag:          1
+    Number of Rows
+        Nrow:         40
+    Number of Columns
+        Ncol:         35
+    Number of Layers
+        Nlay:          1
+    Number of Parameters
+        Npar:       1400
+ 
+ 
+    No Prior Information Provided for Betas
+ 
+ Structural parameter control variables:-
+    Structural Parameters for Beta Association:    1
+        Variogram type: linear
+        Initial structural parameter values:
+            slope =  1.000000E-05
+        Flag determining whether structural parameters are optimized for or fixed:
+            struct_par_opt:    1
+        Power transformation active
+            alpha =  1.000000E+02
+    Structural Parameters for Beta Association:    2
+        Variogram type: linear
+        Initial structural parameter values:
+            slope =  1.000000E-05
+        Flag determining whether structural parameters are optimized for or fixed:
+            struct_par_opt:    1
+        Power transformation active
+            alpha =  1.000000E+02
+    Structural Parameters for Beta Association:    3
+        Variogram type: linear
+        Initial structural parameter values:
+            slope =  1.000000E-05
+        Flag determining whether structural parameters are optimized for or fixed:
+            struct_par_opt:    1
+        Power transformation active
+            alpha =  1.000000E+02
+    Epistemic Uncertainty :-
+        sigma (epistemic) =  1.000000E-02
+ 
+ Initial Parameter Definitions:-
+    For initial parameter values see file :- case4.bpp.0
+ 
+ 
+ ***********************************
+    Outer Iteration Number:          1
+    Inner Iteration Number:          1
+ 
+                      Total PHI :   2.8082E+02
+                     Misfit PHI :   2.8072E+02
+             Regularization PHI :   9.0780E-02
+ 
+        For current parameter values see file :- case4.bpp.1_1                                                                                       
+        For current residual values see file :- case4.bre.1_1                                                                                       
+ 
+ 
+ ***********************************
+    Outer Iteration Number:          1
+    Inner Iteration Number:          2
+ 
+                      Total PHI :   1.0489E+01
+                     Misfit PHI :   1.0479E+01
+             Regularization PHI :   9.3416E-03
+ 
+        For current parameter values see file :- case4.bpp.1_2                                                                                       
+        For current residual values see file :- case4.bre.1_2                                                                                       
+ 
+ 
+ ***********************************
+    Outer Iteration Number:          1
+    Inner Iteration Number:          3
+ 
+                      Total PHI :   6.0838E+00
+                     Misfit PHI :   6.0525E+00
+             Regularization PHI :   3.1262E-02
+ 
+        For current parameter values see file :- case4.bpp.1_3                                                                                       
+        For current residual values see file :- case4.bre.1_3                                                                                       
+ 
+ 
+ ***********************************
+    Outer Iteration Number:          1
+    Inner Iteration Number:          4
+ 
+                      Total PHI :   6.0488E+00
+                     Misfit PHI :   6.0149E+00
+             Regularization PHI :   3.3918E-02
+ 
+        For current parameter values see file :- case4.bpp.1_4                                                                                       
+        For current residual values see file :- case4.bre.1_4                                                                                       
+ 
+ 
+ ***********************************
+    Outer Iteration Number:          1
+    Inner Iteration Number:          5
+ 
+                      Total PHI :   6.0486E+00
+                     Misfit PHI :   6.0148E+00
+             Regularization PHI :   3.3734E-02
+ 
+        For current parameter values see file :- case4.bpp.1_5                                                                                       
+        For current residual values see file :- case4.bre.1_5                                                                                       
+ 
+    ***STRUCTURAL PARAMETERS FOR WHICH OPTIMIZATION WAS REQUESTED***
+    Current Structural Parameters for Beta Association:    1
+        Variogram type: linear
+            slope =  2.482990E-05
+    Current Structural Parameters for Beta Association:    2
+        Variogram type: linear
+            slope =  2.482990E-05
+    Current Structural Parameters for Beta Association:    3
+        Variogram type: linear
+            slope =  2.481279E-05
+    Epistemic Uncertainty :-
+        sigma (epistemic) =  3.660840E-03
+ 
+ 
+ ***********************************
+    Outer Iteration Number:          2
+    Inner Iteration Number:          1
+ 
+                      Total PHI :   1.3667E+01
+                     Misfit PHI :   1.3132E+01
+             Regularization PHI :   5.3511E-01
+ 
+        For current parameter values see file :- case4.bpp.2_1                                                                                       
+        For current residual values see file :- case4.bre.2_1                                                                                       
+ 
+ 
+ ***********************************
+    Outer Iteration Number:          2
+    Inner Iteration Number:          2
+ 
+                      Total PHI :   1.0615E+01
+                     Misfit PHI :   1.0086E+01
+             Regularization PHI :   5.2849E-01
+ 
+        For current parameter values see file :- case4.bpp.2_2                                                                                       
+        For current residual values see file :- case4.bre.2_2                                                                                       
+ 
+ 
+ ***********************************
+    Outer Iteration Number:          2
+    Inner Iteration Number:          3
+ 
+                      Total PHI :   1.0495E+01
+                     Misfit PHI :   9.9841E+00
+             Regularization PHI :   5.1073E-01
+ 
+        For current parameter values see file :- case4.bpp.2_3                                                                                       
+        For current residual values see file :- case4.bre.2_3                                                                                       
+ 
+ 
+ ***********************************
+    Outer Iteration Number:          2
+    Inner Iteration Number:          4
+ 
+                      Total PHI :   1.0487E+01
+                     Misfit PHI :   9.9841E+00
+             Regularization PHI :   5.0261E-01
+ 
+        For current parameter values see file :- case4.bpp.2_4                                                                                       
+        For current residual values see file :- case4.bre.2_4                                                                                       
+ 
+ 
+ ***********************************
+    Outer Iteration Number:          2
+    Inner Iteration Number:          5
+ 
+                      Total PHI :   1.0487E+01
+                     Misfit PHI :   9.9841E+00
+             Regularization PHI :   5.0261E-01
+ 
+        For current parameter values see file :- case4.bpp.2_5                                                                                       
+        For current residual values see file :- case4.bre.2_5                                                                                       
+ 
+    ***STRUCTURAL PARAMETERS FOR WHICH OPTIMIZATION WAS REQUESTED***
+    Current Structural Parameters for Beta Association:    1
+        Variogram type: linear
+            slope =  6.165237E-05
+    Current Structural Parameters for Beta Association:    2
+        Variogram type: linear
+            slope =  6.165237E-05
+    Current Structural Parameters for Beta Association:    3
+        Variogram type: linear
+            slope =  6.156744E-05
+    Epistemic Uncertainty :-
+        sigma (epistemic) =  1.340175E-03
+ 
+ 
+ ***********************************
+    Outer Iteration Number:          3
+    Inner Iteration Number:          1
+ 
+                      Total PHI :   3.1803E+01
+                     Misfit PHI :   2.7169E+01
+             Regularization PHI :   4.6345E+00
+ 
+        For current parameter values see file :- case4.bpp.3_1                                                                                       
+        For current residual values see file :- case4.bre.3_1                                                                                       
+ 
+ 
+ ***********************************
+    Outer Iteration Number:          3
+    Inner Iteration Number:          2
+ 
+                      Total PHI :   3.1826E+01
+                     Misfit PHI :   2.7142E+01
+             Regularization PHI :   4.6841E+00
+ 
+        For current parameter values see file :- case4.bpp.3_2                                                                                       
+        For current residual values see file :- case4.bre.3_2                                                                                       
+ 
+ 
+ ***********************************
+    Outer Iteration Number:          3
+    Inner Iteration Number:          3
+ 
+                      Total PHI :   3.1791E+01
+                     Misfit PHI :   2.7142E+01
+             Regularization PHI :   4.6486E+00
+ 
+        For current parameter values see file :- case4.bpp.3_3                                                                                       
+        For current residual values see file :- case4.bre.3_3                                                                                       
+ 
+ 
+ ***********************************
+    Outer Iteration Number:          3
+    Inner Iteration Number:          4
+ 
+                      Total PHI :   3.1791E+01
+                     Misfit PHI :   2.7142E+01
+             Regularization PHI :   4.6486E+00
+ 
+        For current parameter values see file :- case4.bpp.3_4                                                                                       
+        For current residual values see file :- case4.bre.3_4                                                                                       
+ 
+    ***STRUCTURAL PARAMETERS FOR WHICH OPTIMIZATION WAS REQUESTED***
+    Current Structural Parameters for Beta Association:    1
+        Variogram type: linear
+            slope =  1.530822E-04
+    Current Structural Parameters for Beta Association:    2
+        Variogram type: linear
+            slope =  1.530822E-04
+    Current Structural Parameters for Beta Association:    3
+        Variogram type: linear
+            slope =  1.527660E-04
+    Epistemic Uncertainty :-
+        sigma (epistemic) =  4.906166E-04
+ 
+ 
+ ***********************************
+    Outer Iteration Number:          4
+    Inner Iteration Number:          1
+ 
+                      Total PHI :   6.3716E+01
+                     Misfit PHI :   4.3807E+01
+             Regularization PHI :   1.9908E+01
+ 
+        For current parameter values see file :- case4.bpp.4_1                                                                                       
+        For current residual values see file :- case4.bre.4_1                                                                                       
+ 
+ 
+ ***********************************
+    Outer Iteration Number:          4
+    Inner Iteration Number:          2
+ 
+                      Total PHI :   6.4636E+01
+                     Misfit PHI :   4.3807E+01
+             Regularization PHI :   2.0828E+01
+ 
+        For current parameter values see file :- case4.bpp.4_2                                                                                       
+        For current residual values see file :- case4.bre.4_2                                                                                       
+ 
+ 
+ ***********************************
+    Outer Iteration Number:          4
+    Inner Iteration Number:          3
+ 
+                      Total PHI :   6.4636E+01
+                     Misfit PHI :   4.3807E+01
+             Regularization PHI :   2.0828E+01
+ 
+        For current parameter values see file :- case4.bpp.4_3                                                                                       
+        For current residual values see file :- case4.bre.4_3                                                                                       
+ 
+    ***STRUCTURAL PARAMETERS FOR WHICH OPTIMIZATION WAS REQUESTED***
+    Current Structural Parameters for Beta Association:    1
+        Variogram type: linear
+            slope =  3.801015E-04
+    Current Structural Parameters for Beta Association:    2
+        Variogram type: linear
+            slope =  3.801015E-04
+    Current Structural Parameters for Beta Association:    3
+        Variogram type: linear
+            slope =  3.790550E-04
+    Epistemic Uncertainty :-
+        sigma (epistemic) =  1.796069E-04
+ 
+ 
+ ***********************************
+    Outer Iteration Number:          5
+    Inner Iteration Number:          1
+ 
+                      Total PHI :   7.4966E+01
+                     Misfit PHI :   2.5575E+01
+             Regularization PHI :   4.9391E+01
+ 
+        For current parameter values see file :- case4.bpp.5_1                                                                                       
+        For current residual values see file :- case4.bre.5_1                                                                                       
+ 
+ 
+ ***********************************
+    Outer Iteration Number:          5
+    Inner Iteration Number:          2
+ 
+                      Total PHI :   7.5368E+01
+                     Misfit PHI :   2.5575E+01
+             Regularization PHI :   4.9793E+01
+ 
+        For current parameter values see file :- case4.bpp.5_2                                                                                       
+        For current residual values see file :- case4.bre.5_2                                                                                       
+ 
+ 
+ ***********************************
+    Outer Iteration Number:          5
+    Inner Iteration Number:          3
+ 
+                      Total PHI :   7.5368E+01
+                     Misfit PHI :   2.5575E+01
+             Regularization PHI :   4.9793E+01
+ 
+        For current parameter values see file :- case4.bpp.5_3                                                                                       
+        For current residual values see file :- case4.bre.5_3                                                                                       
+ 
+    ***STRUCTURAL PARAMETERS FOR WHICH OPTIMIZATION WAS REQUESTED***
+    Current Structural Parameters for Beta Association:    1
+        Variogram type: linear
+            slope =  9.437881E-04
+    Current Structural Parameters for Beta Association:    2
+        Variogram type: linear
+            slope =  9.437881E-04
+    Current Structural Parameters for Beta Association:    3
+        Variogram type: linear
+            slope =  9.405411E-04
+    Epistemic Uncertainty :-
+        sigma (epistemic) =  6.575120E-05
+ 
+ 
+ ***********************************
+    Outer Iteration Number:          6
+    Inner Iteration Number:          1
+ 
+                      Total PHI :   5.5993E+01
+                     Misfit PHI :   6.0593E+00
+             Regularization PHI :   4.9934E+01
+ 
+        For current parameter values see file :- case4.bpp.6_1                                                                                       
+        For current residual values see file :- case4.bre.6_1                                                                                       
+ 
+ 
+ ***********************************
+    Outer Iteration Number:          6
+    Inner Iteration Number:          2
+ 
+                      Total PHI :   5.5739E+01
+                     Misfit PHI :   5.7762E+00
+             Regularization PHI :   4.9962E+01
+ 
+        For current parameter values see file :- case4.bpp.6_2                                                                                       
+        For current residual values see file :- case4.bre.6_2                                                                                       
+ 
+ 
+ ***********************************
+    Outer Iteration Number:          6
+    Inner Iteration Number:          3
+ 
+                      Total PHI :   5.5735E+01
+                     Misfit PHI :   5.7762E+00
+             Regularization PHI :   4.9959E+01
+ 
+        For current parameter values see file :- case4.bpp.6_3                                                                                       
+        For current residual values see file :- case4.bre.6_3                                                                                       
+ 
+ 
+ ***********************************
+    Outer Iteration Number:          6
+    Inner Iteration Number:          4
+ 
+                      Total PHI :   5.5735E+01
+                     Misfit PHI :   5.7762E+00
+             Regularization PHI :   4.9959E+01
+ 
+        For current parameter values see file :- case4.bpp.6_4                                                                                       
+        For current residual values see file :- case4.bre.6_4                                                                                       
+ 
+    ***STRUCTURAL PARAMETERS FOR WHICH OPTIMIZATION WAS REQUESTED***
+    Current Structural Parameters for Beta Association:    1
+        Variogram type: linear
+            slope =  2.343416E-03
+    Current Structural Parameters for Beta Association:    2
+        Variogram type: linear
+            slope =  2.343416E-03
+    Current Structural Parameters for Beta Association:    3
+        Variogram type: linear
+            slope =  2.333745E-03
+    Epistemic Uncertainty :-
+        sigma (epistemic) =  2.407046E-05
+ 
+ 
+ ***********************************
+    Outer Iteration Number:          7
+    Inner Iteration Number:          1
+ 
+                      Total PHI :   2.9133E+01
+                     Misfit PHI :   1.4945E+00
+             Regularization PHI :   2.7639E+01
+ 
+        For current parameter values see file :- case4.bpp.7_1                                                                                       
+        For current residual values see file :- case4.bre.7_1                                                                                       
+ 
+ 
+ ***********************************
+    Outer Iteration Number:          7
+    Inner Iteration Number:          2
+ 
+                      Total PHI :   2.9136E+01
+                     Misfit PHI :   1.4945E+00
+             Regularization PHI :   2.7641E+01
+ 
+        For current parameter values see file :- case4.bpp.7_2                                                                                       
+        For current residual values see file :- case4.bre.7_2                                                                                       
+ 
+ 
+ ***********************************
+    Outer Iteration Number:          7
+    Inner Iteration Number:          3
+ 
+                      Total PHI :   2.9136E+01
+                     Misfit PHI :   1.4945E+00
+             Regularization PHI :   2.7641E+01
+ 
+        For current parameter values see file :- case4.bpp.7_3                                                                                       
+        For current residual values see file :- case4.bre.7_3                                                                                       
+ 
+    ***STRUCTURAL PARAMETERS FOR WHICH OPTIMIZATION WAS REQUESTED***
+    Current Structural Parameters for Beta Association:    1
+        Variogram type: linear
+            slope =  5.818678E-03
+    Current Structural Parameters for Beta Association:    2
+        Variogram type: linear
+            slope =  5.818678E-03
+    Current Structural Parameters for Beta Association:    3
+        Variogram type: linear
+            slope =  5.790671E-03
+    Epistemic Uncertainty :-
+        sigma (epistemic) =  8.811810E-06
+ 
+ 
+ ***********************************
+    Outer Iteration Number:          8
+    Inner Iteration Number:          1
+ 
+                      Total PHI :   1.2788E+01
+                     Misfit PHI :   1.7041E-01
+             Regularization PHI :   1.2618E+01
+ 
+        For current parameter values see file :- case4.bpp.8_1                                                                                       
+        For current residual values see file :- case4.bre.8_1                                                                                       
+ 
+ 
+ ***********************************
+    Outer Iteration Number:          8
+    Inner Iteration Number:          2
+ 
+                      Total PHI :   1.2788E+01
+                     Misfit PHI :   1.7010E-01
+             Regularization PHI :   1.2618E+01
+ 
+        For current parameter values see file :- case4.bpp.8_2                                                                                       
+        For current residual values see file :- case4.bre.8_2                                                                                       
+ 
+ 
+ ***********************************
+    Outer Iteration Number:          8
+    Inner Iteration Number:          3
+ 
+                      Total PHI :   1.2787E+01
+                     Misfit PHI :   1.7010E-01
+             Regularization PHI :   1.2617E+01
+ 
+        For current parameter values see file :- case4.bpp.8_3                                                                                       
+        For current residual values see file :- case4.bre.8_3                                                                                       
+ 
+ 
+ ***********************************
+    Outer Iteration Number:          8
+    Inner Iteration Number:          4
+ 
+                      Total PHI :   1.2787E+01
+                     Misfit PHI :   1.7010E-01
+             Regularization PHI :   1.2617E+01
+ 
+        For current parameter values see file :- case4.bpp.8_4                                                                                       
+        For current residual values see file :- case4.bre.8_4                                                                                       
+ 
+    ***STRUCTURAL PARAMETERS FOR WHICH OPTIMIZATION WAS REQUESTED***
+    Current Structural Parameters for Beta Association:    1
+        Variogram type: linear
+            slope =  1.068168E-02
+    Current Structural Parameters for Beta Association:    2
+        Variogram type: linear
+            slope =  1.068168E-02
+    Current Structural Parameters for Beta Association:    3
+        Variogram type: linear
+            slope =  1.062292E-02
+    Epistemic Uncertainty :-
+        sigma (epistemic) =  4.384641E-06
+ 
+ 
+ ***********************************
+    Outer Iteration Number:          9
+    Inner Iteration Number:          1
+ 
+                      Total PHI :   7.1746E+00
+                     Misfit PHI :   5.2495E-02
+             Regularization PHI :   7.1221E+00
+ 
+        For current parameter values see file :- case4.bpp.9_1                                                                                       
+        For current residual values see file :- case4.bre.9_1                                                                                       
+ 
+ 
+ ***********************************
+    Outer Iteration Number:          9
+    Inner Iteration Number:          2
+ 
+                      Total PHI :   7.1749E+00
+                     Misfit PHI :   5.2495E-02
+             Regularization PHI :   7.1224E+00
+ 
+        For current parameter values see file :- case4.bpp.9_2                                                                                       
+        For current residual values see file :- case4.bre.9_2                                                                                       
+ 
+ 
+ ***********************************
+    Outer Iteration Number:          9
+    Inner Iteration Number:          3
+ 
+                      Total PHI :   7.1749E+00
+                     Misfit PHI :   5.2495E-02
+             Regularization PHI :   7.1224E+00
+ 
+        For current parameter values see file :- case4.bpp.9_3                                                                                       
+        For current residual values see file :- case4.bre.9_3                                                                                       
+ 
+    ***STRUCTURAL PARAMETERS FOR WHICH OPTIMIZATION WAS REQUESTED***
+    Current Structural Parameters for Beta Association:    1
+        Variogram type: linear
+            slope =  1.171495E-02
+    Current Structural Parameters for Beta Association:    2
+        Variogram type: linear
+            slope =  1.455291E-02
+    Current Structural Parameters for Beta Association:    3
+        Variogram type: linear
+            slope =  7.663281E-03
+    Epistemic Uncertainty :-
+        sigma (epistemic) =  5.973711E-06
+ 
+ 
+ ***********************************
+    Outer Iteration Number:         10
+    Inner Iteration Number:          1
+ 
+                      Total PHI :   6.3802E+00
+                     Misfit PHI :   3.8531E-02
+             Regularization PHI :   6.3416E+00
+ 
+        For current parameter values see file :- case4.bpp.10_1                                                                                      
+        For current residual values see file :- case4.bre.10_1                                                                                      
+ 
+ 
+ ***********************************
+    Outer Iteration Number:         10
+    Inner Iteration Number:          2
+ 
+                      Total PHI :   6.3802E+00
+                     Misfit PHI :   3.8531E-02
+             Regularization PHI :   6.3416E+00
+ 
+        For current parameter values see file :- case4.bpp.10_2                                                                                      
+        For current residual values see file :- case4.bre.10_2                                                                                      
+ 
+    ***STRUCTURAL PARAMETERS FOR WHICH OPTIMIZATION WAS REQUESTED***
+    Current Structural Parameters for Beta Association:    1
+        Variogram type: linear
+            slope =  1.170681E-02
+    Current Structural Parameters for Beta Association:    2
+        Variogram type: linear
+            slope =  1.455291E-02
+    Current Structural Parameters for Beta Association:    3
+        Variogram type: linear
+            slope =  7.668613E-03
+    Epistemic Uncertainty :-
+        sigma (epistemic) =  5.973711E-06
+ 
+ 
+ ***********************************
+    Outer Iteration Number:         11
+    Inner Iteration Number:          1
+ 
+                      Total PHI :   6.3813E+00
+                     Misfit PHI :   3.8531E-02
+             Regularization PHI :   6.3428E+00
+ 
+        For current parameter values see file :- case4.bpp.11_1                                                                                      
+        For current residual values see file :- case4.bre.11_1                                                                                      
+ 
+ 
+ ***********************************
+    Outer Iteration Number:         11
+    Inner Iteration Number:          2
+ 
+                      Total PHI :   6.3813E+00
+                     Misfit PHI :   3.8531E-02
+             Regularization PHI :   6.3428E+00
+ 
+        For current parameter values see file :- case4.bpp.11_2                                                                                      
+        For current residual values see file :- case4.bre.11_2                                                                                      
+ 
+    ***STRUCTURAL PARAMETERS FOR WHICH OPTIMIZATION WAS REQUESTED***
+    Current Structural Parameters for Beta Association:    1
+        Variogram type: linear
+            slope =  1.169867E-02
+    Current Structural Parameters for Beta Association:    2
+        Variogram type: linear
+            slope =  1.455291E-02
+    Current Structural Parameters for Beta Association:    3
+        Variogram type: linear
+            slope =  7.673949E-03
+    Epistemic Uncertainty :-
+        sigma (epistemic) =  5.973711E-06
+ 
+ 
+ ***********************************
+    Outer Iteration Number:         12
+    Inner Iteration Number:          1
+ 
+                      Total PHI :   6.3824E+00
+                     Misfit PHI :   3.8531E-02
+             Regularization PHI :   6.3439E+00
+ 
+        For current parameter values see file :- case4.bpp.12_1                                                                                      
+        For current residual values see file :- case4.bre.12_1                                                                                      
+ 
+ 
+ ***********************************
+    Outer Iteration Number:         12
+    Inner Iteration Number:          2
+ 
+                      Total PHI :   6.3824E+00
+                     Misfit PHI :   3.8531E-02
+             Regularization PHI :   6.3439E+00
+ 
+        For current parameter values see file :- case4.bpp.12_2                                                                                      
+        For current residual values see file :- case4.bre.12_2                                                                                      
+ 
+    ***STRUCTURAL PARAMETERS FOR WHICH OPTIMIZATION WAS REQUESTED***
+    Current Structural Parameters for Beta Association:    1
+        Variogram type: linear
+            slope =  1.169053E-02
+    Current Structural Parameters for Beta Association:    2
+        Variogram type: linear
+            slope =  1.455291E-02
+    Current Structural Parameters for Beta Association:    3
+        Variogram type: linear
+            slope =  7.679288E-03
+    Epistemic Uncertainty :-
+        sigma (epistemic) =  5.973711E-06
+ 
+ 
+ ***********************************
+    Outer Iteration Number:         13
+    Inner Iteration Number:          1
+ 
+                      Total PHI :   6.3836E+00
+                     Misfit PHI :   3.8531E-02
+             Regularization PHI :   6.3450E+00
+ 
+        For current parameter values see file :- case4.bpp.13_1                                                                                      
+        For current residual values see file :- case4.bre.13_1                                                                                      
+ 
+ 
+ ***********************************
+    Outer Iteration Number:         13
+    Inner Iteration Number:          2
+ 
+                      Total PHI :   6.3836E+00
+                     Misfit PHI :   3.8531E-02
+             Regularization PHI :   6.3450E+00
+ 
+        For current parameter values see file :- case4.bpp.13_2                                                                                      
+        For current residual values see file :- case4.bre.13_2                                                                                      
+ 
+    ***STRUCTURAL PARAMETERS FOR WHICH OPTIMIZATION WAS REQUESTED***
+    Current Structural Parameters for Beta Association:    1
+        Variogram type: linear
+            slope =  1.168241E-02
+    Current Structural Parameters for Beta Association:    2
+        Variogram type: linear
+            slope =  1.455291E-02
+    Current Structural Parameters for Beta Association:    3
+        Variogram type: linear
+            slope =  7.684631E-03
+    Epistemic Uncertainty :-
+        sigma (epistemic) =  5.973711E-06
+ 
+ 
+ ***********************************
+    Outer Iteration Number:         14
+    Inner Iteration Number:          1
+ 
+                      Total PHI :   6.3847E+00
+                     Misfit PHI :   3.8531E-02
+             Regularization PHI :   6.3462E+00
+ 
+        For current parameter values see file :- case4.bpp.14_1                                                                                      
+        For current residual values see file :- case4.bre.14_1                                                                                      
+ 
+ 
+ ***********************************
+    Outer Iteration Number:         14
+    Inner Iteration Number:          2
+ 
+                      Total PHI :   6.3847E+00
+                     Misfit PHI :   3.8531E-02
+             Regularization PHI :   6.3462E+00
+ 
+        For current parameter values see file :- case4.bpp.14_2                                                                                      
+        For current residual values see file :- case4.bre.14_2                                                                                      
+ 
+    ***STRUCTURAL PARAMETERS FOR WHICH OPTIMIZATION WAS REQUESTED***
+    Current Structural Parameters for Beta Association:    1
+        Variogram type: linear
+            slope =  1.167428E-02
+    Current Structural Parameters for Beta Association:    2
+        Variogram type: linear
+            slope =  1.455291E-02
+    Current Structural Parameters for Beta Association:    3
+        Variogram type: linear
+            slope =  7.689978E-03
+    Epistemic Uncertainty :-
+        sigma (epistemic) =  5.973711E-06
+ 
+ 
+ ***********************************
+    Outer Iteration Number:         15
+    Inner Iteration Number:          1
+ 
+                      Total PHI :   6.3858E+00
+                     Misfit PHI :   3.8531E-02
+             Regularization PHI :   6.3473E+00
+ 
+        For current parameter values see file :- case4.bpp.15_1                                                                                      
+        For current residual values see file :- case4.bre.15_1                                                                                      
+ 
+ 
+ ***********************************
+    Outer Iteration Number:         15
+    Inner Iteration Number:          2
+ 
+                      Total PHI :   6.3858E+00
+                     Misfit PHI :   3.8531E-02
+             Regularization PHI :   6.3473E+00
+ 
+        For current parameter values see file :- case4.bpp.15_2                                                                                      
+        For current residual values see file :- case4.bre.15_2                                                                                      
+ 
+    ***STRUCTURAL PARAMETERS FOR WHICH OPTIMIZATION WAS REQUESTED***
+    Current Structural Parameters for Beta Association:    1
+        Variogram type: linear
+            slope =  1.166617E-02
+    Current Structural Parameters for Beta Association:    2
+        Variogram type: linear
+            slope =  1.455291E-02
+    Current Structural Parameters for Beta Association:    3
+        Variogram type: linear
+            slope =  7.695329E-03
+    Epistemic Uncertainty :-
+        sigma (epistemic) =  5.973711E-06
+ 
+ 
+ ***********************************
+    Outer Iteration Number:         16
+    Inner Iteration Number:          1
+ 
+                      Total PHI :   6.3870E+00
+                     Misfit PHI :   3.8531E-02
+             Regularization PHI :   6.3484E+00
+ 
+        For current parameter values see file :- case4.bpp.16_1                                                                                      
+        For current residual values see file :- case4.bre.16_1                                                                                      
+ 
+ 
+ ***********************************
+    Outer Iteration Number:         16
+    Inner Iteration Number:          2
+ 
+                      Total PHI :   6.3870E+00
+                     Misfit PHI :   3.8531E-02
+             Regularization PHI :   6.3484E+00
+ 
+        For current parameter values see file :- case4.bpp.16_2                                                                                      
+        For current residual values see file :- case4.bre.16_2                                                                                      
+ 
+    ***STRUCTURAL PARAMETERS FOR WHICH OPTIMIZATION WAS REQUESTED***
+    Current Structural Parameters for Beta Association:    1
+        Variogram type: linear
+            slope =  1.165805E-02
+    Current Structural Parameters for Beta Association:    2
+        Variogram type: linear
+            slope =  1.455291E-02
+    Current Structural Parameters for Beta Association:    3
+        Variogram type: linear
+            slope =  7.700683E-03
+    Epistemic Uncertainty :-
+        sigma (epistemic) =  5.973711E-06
+ 
+ 
+ ***********************************
+    Outer Iteration Number:         17
+    Inner Iteration Number:          1
+ 
+                      Total PHI :   6.3881E+00
+                     Misfit PHI :   3.8531E-02
+             Regularization PHI :   6.3496E+00
+ 
+        For current parameter values see file :- case4.bpp.17_1                                                                                      
+        For current residual values see file :- case4.bre.17_1                                                                                      
+ 
+ 
+ ***********************************
+    Outer Iteration Number:         17
+    Inner Iteration Number:          2
+ 
+                      Total PHI :   6.3881E+00
+                     Misfit PHI :   3.8531E-02
+             Regularization PHI :   6.3496E+00
+ 
+        For current parameter values see file :- case4.bpp.17_2                                                                                      
+        For current residual values see file :- case4.bre.17_2                                                                                      
+ 
+    ***STRUCTURAL PARAMETERS FOR WHICH OPTIMIZATION WAS REQUESTED***
+    Current Structural Parameters for Beta Association:    1
+        Variogram type: linear
+            slope =  8.410015E-03
+    Current Structural Parameters for Beta Association:    2
+        Variogram type: linear
+            slope =  1.596066E-02
+    Current Structural Parameters for Beta Association:    3
+        Variogram type: linear
+            slope =  1.049155E-02
+    Epistemic Uncertainty :-
+        sigma (epistemic) =  8.138687E-06
+ 
+ 
+ ***********************************
+    Outer Iteration Number:         18
+    Inner Iteration Number:          1
+ 
+                      Total PHI :   6.8679E+00
+                     Misfit PHI :   2.8281E-02
+             Regularization PHI :   6.8396E+00
+ 
+        For current parameter values see file :- case4.bpp.18_1                                                                                      
+        For current residual values see file :- case4.bre.18_1                                                                                      
+ 
+ 
+ ***********************************
+    Outer Iteration Number:         18
+    Inner Iteration Number:          2
+ 
+                      Total PHI :   6.8679E+00
+                     Misfit PHI :   2.8281E-02
+             Regularization PHI :   6.8396E+00
+ 
+        For current parameter values see file :- case4.bpp.18_2                                                                                      
+        For current residual values see file :- case4.bre.18_2                                                                                      
+ 
+    ***STRUCTURAL PARAMETERS FOR WHICH OPTIMIZATION WAS REQUESTED***
+    Current Structural Parameters for Beta Association:    1
+        Variogram type: linear
+            slope =  8.421722E-03
+    Current Structural Parameters for Beta Association:    2
+        Variogram type: linear
+            slope =  1.596066E-02
+    Current Structural Parameters for Beta Association:    3
+        Variogram type: linear
+            slope =  1.049155E-02
+    Epistemic Uncertainty :-
+        sigma (epistemic) =  8.138687E-06
+ 
+ 
+ ***********************************
+    Outer Iteration Number:         19
+    Inner Iteration Number:          1
+ 
+                      Total PHI :   6.8629E+00
+                     Misfit PHI :   2.8281E-02
+             Regularization PHI :   6.8346E+00
+ 
+        For current parameter values see file :- case4.bpp.19_1                                                                                      
+        For current residual values see file :- case4.bre.19_1                                                                                      
+ 
+ 
+ ***********************************
+    Outer Iteration Number:         19
+    Inner Iteration Number:          2
+ 
+                      Total PHI :   6.8629E+00
+                     Misfit PHI :   2.8281E-02
+             Regularization PHI :   6.8346E+00
+ 
+        For current parameter values see file :- case4.bpp.19_2                                                                                      
+        For current residual values see file :- case4.bre.19_2                                                                                      
+ 
+    ***STRUCTURAL PARAMETERS FOR WHICH OPTIMIZATION WAS REQUESTED***
+    Current Structural Parameters for Beta Association:    1
+        Variogram type: linear
+            slope =  8.433446E-03
+    Current Structural Parameters for Beta Association:    2
+        Variogram type: linear
+            slope =  1.596066E-02
+    Current Structural Parameters for Beta Association:    3
+        Variogram type: linear
+            slope =  1.049155E-02
+    Epistemic Uncertainty :-
+        sigma (epistemic) =  8.138687E-06
+ 
+ 
+ ***********************************
+    Outer Iteration Number:         20
+    Inner Iteration Number:          1
+ 
+                      Total PHI :   6.8578E+00
+                     Misfit PHI :   2.8281E-02
+             Regularization PHI :   6.8295E+00
+ 
+        For current parameter values see file :- case4.bpp.20_1                                                                                      
+        For current residual values see file :- case4.bre.20_1                                                                                      
+ 
+ 
+ ***********************************
+    Outer Iteration Number:         20
+    Inner Iteration Number:          2
+ 
+                      Total PHI :   6.8578E+00
+                     Misfit PHI :   2.8281E-02
+             Regularization PHI :   6.8295E+00
+ 
+        For current parameter values see file :- case4.bpp.20_2                                                                                      
+        For current residual values see file :- case4.bre.20_2                                                                                      
+ 
+    ***STRUCTURAL PARAMETERS FOR WHICH OPTIMIZATION WAS REQUESTED***
+    Current Structural Parameters for Beta Association:    1
+        Variogram type: linear
+            slope =  8.445186E-03
+    Current Structural Parameters for Beta Association:    2
+        Variogram type: linear
+            slope =  1.596066E-02
+    Current Structural Parameters for Beta Association:    3
+        Variogram type: linear
+            slope =  1.049155E-02
+    Epistemic Uncertainty :-
+        sigma (epistemic) =  8.138687E-06
+ 
+ 
+ ***********************************
+    Outer Iteration Number:         21
+    Inner Iteration Number:          1
+ 
+                      Total PHI :   6.8528E+00
+                     Misfit PHI :   2.8281E-02
+             Regularization PHI :   6.8245E+00
+ 
+        For current parameter values see file :- case4.bpp.21_1                                                                                      
+        For current residual values see file :- case4.bre.21_1                                                                                      
+ 
+ 
+ ***********************************
+    Outer Iteration Number:         21
+    Inner Iteration Number:          2
+ 
+                      Total PHI :   6.8528E+00
+                     Misfit PHI :   2.8281E-02
+             Regularization PHI :   6.8245E+00
+ 
+        For current parameter values see file :- case4.bpp.21_2                                                                                      
+        For current residual values see file :- case4.bre.21_2                                                                                      
+ 
+    ***STRUCTURAL PARAMETERS FOR WHICH OPTIMIZATION WAS REQUESTED***
+    Current Structural Parameters for Beta Association:    1
+        Variogram type: linear
+            slope =  8.456942E-03
+    Current Structural Parameters for Beta Association:    2
+        Variogram type: linear
+            slope =  1.596066E-02
+    Current Structural Parameters for Beta Association:    3
+        Variogram type: linear
+            slope =  1.049155E-02
+    Epistemic Uncertainty :-
+        sigma (epistemic) =  8.138687E-06
+ 
+ 
+ ***********************************
+    Outer Iteration Number:         22
+    Inner Iteration Number:          1
+ 
+                      Total PHI :   6.8477E+00
+                     Misfit PHI :   2.8281E-02
+             Regularization PHI :   6.8194E+00
+ 
+        For current parameter values see file :- case4.bpp.22_1                                                                                      
+        For current residual values see file :- case4.bre.22_1                                                                                      
+ 
+ 
+ ***********************************
+    Outer Iteration Number:         22
+    Inner Iteration Number:          2
+ 
+                      Total PHI :   6.8477E+00
+                     Misfit PHI :   2.8281E-02
+             Regularization PHI :   6.8194E+00
+ 
+        For current parameter values see file :- case4.bpp.22_2                                                                                      
+        For current residual values see file :- case4.bre.22_2                                                                                      
+ 
+    ***STRUCTURAL PARAMETERS FOR WHICH OPTIMIZATION WAS REQUESTED***
+    Current Structural Parameters for Beta Association:    1
+        Variogram type: linear
+            slope =  8.468714E-03
+    Current Structural Parameters for Beta Association:    2
+        Variogram type: linear
+            slope =  1.596066E-02
+    Current Structural Parameters for Beta Association:    3
+        Variogram type: linear
+            slope =  1.049155E-02
+    Epistemic Uncertainty :-
+        sigma (epistemic) =  8.138687E-06
+ 
+ 
+ ***********************************
+    Outer Iteration Number:         23
+    Inner Iteration Number:          1
+ 
+                      Total PHI :   6.8427E+00
+                     Misfit PHI :   2.8281E-02
+             Regularization PHI :   6.8144E+00
+ 
+        For current parameter values see file :- case4.bpp.23_1                                                                                      
+        For current residual values see file :- case4.bre.23_1                                                                                      
+ 
+ 
+ ***********************************
+    Outer Iteration Number:         23
+    Inner Iteration Number:          2
+ 
+                      Total PHI :   6.8427E+00
+                     Misfit PHI :   2.8281E-02
+             Regularization PHI :   6.8144E+00
+ 
+        For current parameter values see file :- case4.bpp.23_2                                                                                      
+        For current residual values see file :- case4.bre.23_2                                                                                      
+ 
+    ***STRUCTURAL PARAMETERS FOR WHICH OPTIMIZATION WAS REQUESTED***
+    Current Structural Parameters for Beta Association:    1
+        Variogram type: linear
+            slope =  8.480504E-03
+    Current Structural Parameters for Beta Association:    2
+        Variogram type: linear
+            slope =  1.596066E-02
+    Current Structural Parameters for Beta Association:    3
+        Variogram type: linear
+            slope =  1.049155E-02
+    Epistemic Uncertainty :-
+        sigma (epistemic) =  8.138687E-06
+ 
+ 
+ ***********************************
+    Outer Iteration Number:         24
+    Inner Iteration Number:          1
+ 
+                      Total PHI :   6.8376E+00
+                     Misfit PHI :   2.8281E-02
+             Regularization PHI :   6.8093E+00
+ 
+        For current parameter values see file :- case4.bpp.24_1                                                                                      
+        For current residual values see file :- case4.bre.24_1                                                                                      
+ 
+ 
+ ***********************************
+    Outer Iteration Number:         24
+    Inner Iteration Number:          2
+ 
+                      Total PHI :   6.8376E+00
+                     Misfit PHI :   2.8281E-02
+             Regularization PHI :   6.8093E+00
+ 
+        For current parameter values see file :- case4.bpp.24_2                                                                                      
+        For current residual values see file :- case4.bre.24_2                                                                                      
+ 
+    ***STRUCTURAL PARAMETERS FOR WHICH OPTIMIZATION WAS REQUESTED***
+    Current Structural Parameters for Beta Association:    1
+        Variogram type: linear
+            slope =  8.492309E-03
+    Current Structural Parameters for Beta Association:    2
+        Variogram type: linear
+            slope =  1.596066E-02
+    Current Structural Parameters for Beta Association:    3
+        Variogram type: linear
+            slope =  1.049155E-02
+    Epistemic Uncertainty :-
+        sigma (epistemic) =  8.138687E-06
+ 
+ 
+ ***********************************
+    Outer Iteration Number:         25
+    Inner Iteration Number:          1
+ 
+                      Total PHI :   6.8326E+00
+                     Misfit PHI :   2.8281E-02
+             Regularization PHI :   6.8043E+00
+ 
+        For current parameter values see file :- case4.bpp.25_1                                                                                      
+        For current residual values see file :- case4.bre.25_1                                                                                      
+ 
+ 
+ ***********************************
+    Outer Iteration Number:         25
+    Inner Iteration Number:          2
+ 
+                      Total PHI :   6.8326E+00
+                     Misfit PHI :   2.8281E-02
+             Regularization PHI :   6.8043E+00
+ 
+        For current parameter values see file :- case4.bpp.25_2                                                                                      
+        For current residual values see file :- case4.bre.25_2                                                                                      
+ 
+    ***FINAL STRUCTURAL PARAMETERS***
+    Final Structural Parameters for Beta Association:    1
+        Variogram type: linear
+            slope =  8.492309E-03
+    Final Structural Parameters for Beta Association:    2
+        Variogram type: linear
+            slope =  1.596066E-02
+    Final Structural Parameters for Beta Association:    3
+        Variogram type: linear
+            slope =  1.049155E-02
+    Epistemic Uncertainty :-
+        Final sigma (epistemic) =  8.138687E-06

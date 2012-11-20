@@ -1,0 +1,99 @@
+BEGIN algorithmic_cv KEYWORDS
+ structural_conv=0.004 phi_conv=0.004 bga_conv=1.0e-2
+ it_max_structural=10 it_max_phi=15 it_max_bga=15 
+ linesearch=1         it_max_linesearch=3
+ theta_cov_form=1 Q_compression_flag=1
+ deriv_mode = 1
+ jacobian_format = ascii
+ jacobian_file = S1_1.jac
+ posterior_cov_flag = 1
+ par_anisotropy=0
+END algorithmic_cv 
+
+BEGIN prior_mean_cv KEYWORDS
+ prior_betas=   1       
+ beta_cov_form=1
+END prior_mean_cv 
+
+BEGIN prior_mean_data TABLE
+ nrow=1 ncol=7 columnlabels 
+ BetaAssoc Partrans  beta_0   beta_cov_1   beta_cov_2   beta_cov_3     beta_cov_4 
+ 1           log     -7.6       5e-7      65.          3.1            4.1 
+END prior_mean_data    
+
+BEGIN structural_parameter_cv TABLE  
+ nrow=1 ncol=6 columnlabels 
+ BetaAssoc  prior_cov_mode  var_type   struct_par_opt    trans_theta   alpha_trans  
+ 1          2                1          1                1             20
+END structural_parameter_cv   
+
+BEGIN structural_parameters_data TABLE  
+ nrow=1 ncol=3 columnlabels 
+ BetaAssoc  theta_0_1    theta_0_2     
+ 1          1.0e-007        -0.1         
+END structural_parameters_data
+
+BEGIN structural_parameters_cov TABLE  
+ nrow=1 ncol=1 columnlabels 
+ theta_cov_1     
+  11.1           
+
+END structural_parameters_cov
+
+BEGIN epistemic_error_term KEYWORDS
+  sig_0 = 1.000e-001   sig_opt = 1  sig_p_var=0.00001
+END epistemic_error_term
+
+BEGIN parameter_cv KEYWORDS  
+ ndim=3
+END parameter_cv   
+
+BEGIN Q_compression_cv TABLE  
+ nrow=1 ncol=5 columnlabels 
+ BetaAssoc   Toep_flag     Nrow    Ncol   Nlay
+ 1           1             21      21     1
+END Q_compression_cv
+
+BEGIN parameter_groups TABLE
+  nrow=1 ncol=2 columnlabels
+  groupname     grouptype
+  pargp_uno     1
+END parameter_groups   
+
+BEGIN parameter_data FILES  
+ PARAMETERS.txt
+END parameter_data 
+
+BEGIN observation_groups TABLE
+  nrow=1 ncol=1 columnlabels
+  groupname
+  obsgp_oden
+END observation_groups  
+
+
+BEGIN observation_data FILES
+ obs12.txt
+END observation_data 
+ 
+BEGIN model_command_lines KEYWORDS  
+ Command = modflow.bat
+ DerivCommand = modflow_adj.bat
+END model_command_lines   
+
+BEGIN model_input_files TABLE  
+ nrow=1 ncol=2 columnlabels 
+ TemplateFile                           ModInFile
+ S1_mul.tpl                             S1_.mul  
+END model_input_files 
+
+BEGIN model_output_files  TABLE  
+ nrow=1 ncol=2 columnlabels 
+ InstructionFile       ModOutFile   
+ S1_1_hbs.ins          S1_1.hbs  
+END model_output_files 
+
+BEGIN parameter_anisotropy TABLE
+nrow = 1 ncol = 4 columnlabels
+BetaAssoc horiz_angle horiz_ratio vertical_ratio
+1           45          10         10
+END parameter_anisotropy

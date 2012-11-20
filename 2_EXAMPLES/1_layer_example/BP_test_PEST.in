@@ -1,0 +1,88 @@
+BEGIN algorithmic_cv KEYWORDS
+ structural_conv=0.002 phi_conv=0.003 bga_conv=0.004
+ it_max_structural=11 it_max_phi=12 it_max_bga=13 
+ linesearch=1         it_max_linesearch=25
+ theta_cov_form=0 Q_compression_flag=0
+END algorithmic_cv 
+
+BEGIN prior_mean_cv KEYWORDS
+ prior_betas=0
+ beta_cov_form=0
+END prior_mean_cv 
+
+BEGIN prior_mean_data TABLE
+ nrow=1 ncol=7 columnlabels 
+ BetaAssoc Partrans  beta_0   beta_cov_1   beta_cov_2   beta_cov_3     beta_cov_4 
+ 1           log     -7.6       5e-7 	  65.          3.1            4.1 
+END prior_mean_data    
+
+BEGIN structural_parameter_cv TABLE  
+ nrow=1 ncol=7 columnlabels 
+ BetaAssoc  prior_cov_mode  var_type   num_theta_type  struct_par_opt    trans_theta   alpha_trans  
+ 1          2                1          1               0                 1             20
+END structural_parameter_cv   
+
+BEGIN structural_parameters_data TABLE  
+ nrow=1 ncol=2 columnlabels 
+ BetaAssoc  theta_0_1    theta_0_2     
+ 1          1.0e-006        -0.1         
+END structural_parameters_data
+
+BEGIN structural_parameters_cov TABLE  
+ nrow=1 ncol=1 columnlabels 
+ theta_cov_1     
+  11.1           
+END structural_parameters_cov
+
+BEGIN epistemic_error_term KEYWORDS
+  sig_0 = 1.000e-001   sig_opt = 0  sig_p_var=0.001
+END epistemic_error_term
+
+BEGIN parameter_cv KEYWORDS  
+ ndim=3
+END parameter_cv   
+
+BEGIN Q_compression_cv TABLE  
+ nrow=1 ncol=5 columnlabels 
+ BetaAssoc   Toep_flag 	   Nrow    Ncol   Nlay
+ 1           0             21      21     1
+END Q_compression_cv
+
+BEGIN parameter_groups TABLE
+  nrow=1 ncol=2 columnlabels
+  groupname	grouptype
+  pargp_uno	1
+END parameter_groups   
+
+BEGIN parameter_data FILES  
+ PARAMETERS.txt
+END parameter_data 
+
+BEGIN observation_groups TABLE
+  nrow=1 ncol=1 columnlabels
+  groupname
+  obsgp_oden
+END observation_groups  
+
+
+BEGIN observation_data FILES
+ obs12.txt
+END observation_data 
+ 
+BEGIN model_command_lines TABLE  
+ nrow=1 ncol=1 columnlabels 
+ Command
+modflow.bat
+END model_command_lines   
+
+BEGIN model_input_files TABLE  
+ nrow=1 ncol=2 columnlabels 
+ TemplateFile                           ModInFile
+ S1_mul.tpl  	                        S1_.mul  
+END model_input_files 
+
+BEGIN model_output_files  TABLE  
+ nrow=1 ncol=2 columnlabels 
+ InstructionFile       ModOutFile   
+ S1_1_hbs.ins          S1_1.hbs  
+END model_output_files 

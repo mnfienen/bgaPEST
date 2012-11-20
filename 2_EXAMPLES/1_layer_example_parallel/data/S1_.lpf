@@ -1,0 +1,11 @@
+# MODFLOW2005 Layer Property Flow (LPF) Package Parent MD
+        50   999.000         1
+0
+0
+1.000000e+000
+1
+0
+kh000001  HK  1.00000000e+000  1
+1 M1 khz1     1
+-1
+CONSTANT  1

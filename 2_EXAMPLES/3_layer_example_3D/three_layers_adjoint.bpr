@@ -1,0 +1,265 @@
+ 
+ 
+          bgaPEST RUN RECORD: CASE three_layers_adjoint                                                                                                                                                                                                                                            
+ Case Dimensions :-
+                    Number of Parameters:    4200
+              Number of Parameter Groups:       3
+                  Number of Observations:      36
+            Number of Observation Groups:       3
+ 
+ Model Command Line :-
+    modflow.bat                                       
+ Jacobian Command Line :-
+    modflow_adj.bat                                   
+ 
+ Model Interface Files:-
+    Template files:
+        three_layers.tpl                                                                                    
+    for model input files:
+        three_layers.mlt                                                                                    
+    Instruction files:
+        three_layers_hbs.ins                                                                                
+    for model ouput files:
+        three_layers.hbs                                                                                    
+    Jacobian Matrix Output File:
+        three_layers.jac                                                                                    
+    Jacobian Matrix Output Format:
+        ascii 
+ 
+ Algorithmic control variables:-
+    Structural Paramter Convergence
+        structural_conv:   4.0000E-04
+    Objective Function Convergence
+        phi_conv:   4.0000E-04
+    Outermost BGA Convergence
+        bga_conv:   4.0000E-03
+    Maximum Number of Structural Paramter Iterations
+        it_max_structural:         15
+    Maximum Number of Objective Function Iterations
+        it_max_phi:         15
+    Maximum Number of Outermost BGA Iterations
+        it_max_bga:         15
+    Linesearch Flag: [0] indicates no linesearh, [1] indicates perform linesarch
+        lns_flag:          1
+    Maximum Number of Linesearch Iterations
+        it_max_lns:          5
+    Logical Flag for storing Q Matrix
+        store_Q:     T
+    Form of theta covariance: [0] none, [1], diag, [2] full matrix
+        theta_cov_form:          0
+    Compression of Q0 matrix: [0] none - compute full Q0, [1], Q0 for each beta
+        Q_ compression_flag:          0
+    Derivatives mode: [0] External PEST Perturbations, [1] specified Jacobian command line
+        deriv_mode:          1
+    External derivatives calculated using file:-
+        modflow_adj.bat                                   
+    External derivatives read from file:-
+        three_layers.jac                                                                                    
+    External derivatives file format:-
+        ascii 
+ 
+    Parameter Anisotropy: [0] do not read parameter_anisotropy block, [1] do read block
+        par_anisotropy:          0
+ 
+       3 Beta Associations were defined:
+     No Compression Requested.
+ 
+ 
+    No Prior Information Provided for Betas
+ 
+ Structural parameter control variables:-
+    Structural Parameters for Beta Association:    1
+        Variogram type: linear
+        Initial structural parameter values:
+            slope = 1.000000E-05
+        Flag determining whether structural parameters are optimized for or fixed:
+            struct_par_opt:    1
+        Power transformation active
+            alpha = 1.000000E+02
+    Structural Parameters for Beta Association:    2
+        Variogram type: linear
+        Initial structural parameter values:
+            slope = 1.000000E-05
+        Flag determining whether structural parameters are optimized for or fixed:
+            struct_par_opt:    1
+        Power transformation active
+            alpha = 1.000000E+02
+    Structural Parameters for Beta Association:    3
+        Variogram type: linear
+        Initial structural parameter values:
+            slope = 1.000000E-05
+        Flag determining whether structural parameters are optimized for or fixed:
+            struct_par_opt:    1
+        Power transformation active
+            alpha = 1.000000E+02
+    Epistemic Uncertainty :-
+        sigma (epistemic) = 1.000000E-05
+ 
+ Initial Parameter Definitions:-
+    For initial parameter values see file :- three_layers_adjoint.bpp.0
+ 
+ 
+ ***********************************
+    Outer Iteration Number:          1
+    Inner Iteration Number:          1
+ 
+                      Total PHI :   4.4447E+05
+                     Misfit PHI :   5.2455E+05
+             Regularization PHI :   1.0683E+04
+ 
+        For current parameter values see file :- three_layers_adjoint.bpp.1_1                                                                        
+        For current residual values see file :- three_layers_adjoint.bre.1_1                                                                        
+ 
+ 
+ ***********************************
+    Outer Iteration Number:          1
+    Inner Iteration Number:          2
+ 
+                      Total PHI :   1.7339E+04
+                     Misfit PHI :   1.5314E+04
+             Regularization PHI :   2.0254E+03
+ 
+        For current parameter values see file :- three_layers_adjoint.bpp.1_2                                                                        
+        For current residual values see file :- three_layers_adjoint.bre.1_2                                                                        
+ 
+ 
+ ***********************************
+    Outer Iteration Number:          1
+    Inner Iteration Number:          3
+ 
+                      Total PHI :   2.2807E+03
+                     Misfit PHI :   1.2475E+03
+             Regularization PHI :   1.0333E+03
+ 
+        For current parameter values see file :- three_layers_adjoint.bpp.1_3                                                                        
+        For current residual values see file :- three_layers_adjoint.bre.1_3                                                                        
+ 
+ 
+ ***********************************
+    Outer Iteration Number:          1
+    Inner Iteration Number:          4
+ 
+                      Total PHI :   2.2709E+03
+                     Misfit PHI :   1.2429E+03
+             Regularization PHI :   1.0280E+03
+ 
+        For current parameter values see file :- three_layers_adjoint.bpp.1_4                                                                        
+        For current residual values see file :- three_layers_adjoint.bre.1_4                                                                        
+ 
+ 
+ ***********************************
+    Outer Iteration Number:          1
+    Inner Iteration Number:          5
+ 
+                      Total PHI :   2.2714E+03
+                     Misfit PHI :   1.2435E+03
+             Regularization PHI :   1.0285E+03
+ 
+        For current parameter values see file :- three_layers_adjoint.bpp.1_5                                                                        
+        For current residual values see file :- three_layers_adjoint.bre.1_5                                                                        
+ 
+ 
+ ***********************************
+    Outer Iteration Number:          1
+    Inner Iteration Number:          6
+ 
+                      Total PHI :   2.2714E+03
+                     Misfit PHI :   1.2435E+03
+             Regularization PHI :   1.0285E+03
+ 
+        For current parameter values see file :- three_layers_adjoint.bpp.1_6                                                                        
+        For current residual values see file :- three_layers_adjoint.bre.1_6                                                                        
+ 
+    ***STRUCTURAL PARAMETERS FOR WHICH OPTIMIZATION WAS REQUESTED***
+    Current Structural Parameters for Beta Association:    1
+        Variogram type: linear
+            slope = 2.439446E-04
+    Current Structural Parameters for Beta Association:    2
+        Variogram type: linear
+            slope = 8.324009E-03
+    Current Structural Parameters for Beta Association:    3
+        Variogram type: linear
+            slope = 4.774072E-04
+ 
+ 
+ ***********************************
+    Outer Iteration Number:          2
+    Inner Iteration Number:          1
+ 
+                      Total PHI :   6.2958E+02
+                     Misfit PHI :   5.8945E+02
+             Regularization PHI :   9.0000E+01
+ 
+        For current parameter values see file :- three_layers_adjoint.bpp.2_1                                                                        
+        For current residual values see file :- three_layers_adjoint.bre.2_1                                                                        
+ 
+ 
+ ***********************************
+    Outer Iteration Number:          2
+    Inner Iteration Number:          2
+ 
+                      Total PHI :   2.1080E+02
+                     Misfit PHI :   1.2009E+02
+             Regularization PHI :   9.0705E+01
+ 
+        For current parameter values see file :- three_layers_adjoint.bpp.2_2                                                                        
+        For current residual values see file :- three_layers_adjoint.bre.2_2                                                                        
+ 
+ 
+ ***********************************
+    Outer Iteration Number:          2
+    Inner Iteration Number:          3
+ 
+                      Total PHI :   9.9599E+01
+                     Misfit PHI :   8.8893E+00
+             Regularization PHI :   9.1082E+01
+ 
+        For current parameter values see file :- three_layers_adjoint.bpp.2_3                                                                        
+        For current residual values see file :- three_layers_adjoint.bre.2_3                                                                        
+ 
+ 
+ ***********************************
+    Outer Iteration Number:          2
+    Inner Iteration Number:          4
+ 
+                      Total PHI :   9.9519E+01
+                     Misfit PHI :   8.3786E+00
+             Regularization PHI :   9.1141E+01
+ 
+        For current parameter values see file :- three_layers_adjoint.bpp.2_4                                                                        
+        For current residual values see file :- three_layers_adjoint.bre.2_4                                                                        
+ 
+ 
+ ***********************************
+    Outer Iteration Number:          2
+    Inner Iteration Number:          5
+ 
+                      Total PHI :   9.9543E+01
+                     Misfit PHI :   8.3786E+00
+             Regularization PHI :   9.1164E+01
+ 
+        For current parameter values see file :- three_layers_adjoint.bpp.2_5                                                                        
+        For current residual values see file :- three_layers_adjoint.bre.2_5                                                                        
+ 
+ 
+ ***********************************
+    Outer Iteration Number:          2
+    Inner Iteration Number:          6
+ 
+                      Total PHI :   9.9543E+01
+                     Misfit PHI :   8.3788E+00
+             Regularization PHI :   9.1164E+01
+ 
+        For current parameter values see file :- three_layers_adjoint.bpp.2_6                                                                        
+        For current residual values see file :- three_layers_adjoint.bre.2_6                                                                        
+ 
+    ***STRUCTURAL PARAMETERS FOR WHICH OPTIMIZATION WAS REQUESTED***
+    Current Structural Parameters for Beta Association:    1
+        Variogram type: linear
+            slope = 2.439446E-04
+    Current Structural Parameters for Beta Association:    2
+        Variogram type: linear
+            slope = 8.324009E-03
+    Current Structural Parameters for Beta Association:    3
+        Variogram type: linear
+            slope = 4.774072E-04

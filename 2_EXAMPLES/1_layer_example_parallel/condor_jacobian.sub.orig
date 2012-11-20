@@ -1,0 +1,19 @@
+notification = Never
+
+universe = vanilla
+log = log/worker_$(Cluster).log
+output = log/worker_$(Cluster)_$(Process).out
+error = log/worker_$(Cluster)_$(Process).err
+requirements = ((Target.Memory >= 2000) && (OpSys == "WINNT52") && (Arch == "X86_64"))
+arguments = $(Process)
+request_memory = 2000
+executable = worker.bat
+stream_output = True
+stream_error = True
+should_transfer_files = YES 
+when_to_transfer_output = ON_EXIT
+transfer_output_files = data/results_$(Process).zip
+transfer_output_remaps = "results_$(Process).zip = #jacfilestmp#/results_$(Process).zip"
+transfer_input_files = data.zip,unzip.exe,zip_results.py
+queue 150
+ 
