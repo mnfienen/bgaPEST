@@ -10,6 +10,7 @@ Implementation With PEST—Documentation and Instructions
 By Michael N. Fienen, Marco D’Oria, John E. Doherty, and Randall J. Hunt
 Techniques and Methods, Book 7, Section C9
 Published 2012
+http://pubs.usgs.gov/tm/tm7c9
 
 GENERAL INSTRUCTIONS:
 1) Create an input file, following the documentation, with the .bgp extension
@@ -34,3 +35,8 @@ The src subdirectory contains all Fortran source code used for bgaPEST. The insc
 is a double-precision version of the PEST utility inschek for use with the parallel option of
 bgaPEST. Finally, in the src subdirectory is a python subdirectory containing the source code 
 for pst_generator and the parallel CHTCondor utilities.
+
+DISCLAIMER and NOTICE
+Please refer to the USGS Software User Rights Notice (http://water.usgs.gov/software/help/notice/) for complete use, copyright, and distribution information. The USGS provides no warranty, expressed or implied, as to the correctness of the furnished software or the suitability for any purpose. The software has been tested, but as with any complex software, there could be undetected errors. Users who find errors are requested to report them to the USGS.
+
+References to non-USGS products, trade names, and (or) services are provided for information purposes only and do not constitute endorsement or warranty, express or implied, by the USGS, U.S. Department of Interior, or U.S. Government, as to their suitability, content, usefulness, functioning, completeness, or accuracy.

@@ -166,6 +166,9 @@ program bp_main
           prev_bga_phi  = huge_val ! initialize current outer loop convergence
           curr_bga_phi  = huge_val ! initialize current bga objective function 
 
+!-- Run forward model once to obtain the initial modeled observation vector (consistent with the initial set of parameters)  
+    call bpf_model_run(errstruc, d_MOD, cv_PAR,d_PAR, cv_OBS, cv_A,  d_OBS, d_A, 0, miostruc)
+
     do b_ind = 1, cv_A%it_max_bga  !*********************************************************************** (more external loop)
     
     !***************************************************************************************************************************  

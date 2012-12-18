@@ -61,29 +61,33 @@ contains
               call utl_bomb_out(errstruc)
             endif 
         case (1) ! external PEST-style Jacobian
-            call system(d_MOD%com) ! run the model once, forward, to have outputs with current parameters 
-            !-- MIO read the ouput file results and update 
-            if(mio_read_model_output_files(errstruc,miostruc, d_OBS%h).ne.0) then
-              call utl_bomb_out(errstruc) 
-            endif 
+         !MD Done at the very beginning !
+         !MD!   call system(d_MOD%com) ! run the model once, forward, to have outputs with current parameters 
+         !MD!   !-- MIO read the ouput file results and update 
+         !MD!   if(mio_read_model_output_files(errstruc,miostruc, d_OBS%h).ne.0) then
+         !MD!     call utl_bomb_out(errstruc) 
+         !MD!   endif 
             !-- create PEST input files and run PEST          
             call bxd_write_param_file(cv_PAR,d_PAR) ! write the parameter file
             call system('pst_generator.exe')        ! create the necessary PEST control file
             call system('run_pest_scratch.bat')     ! run PEST externally for derivatives
             call readJCO('scratch.jco', d_A)
         case (2) ! dercom alternative Jacobian
-            call system(d_MOD%dercom) 
-            ! for now, assume this alternative is MODFLOW_ADJOINT
+         !MD Done at the very beginning !
+         !MD!   call system(d_MOD%com) !Rum forward model once to obtain the current outputs, before running external derivative model
+         !MD!   !-- MIO read the ouput file results and update 
+         !MD!   if(mio_read_model_output_files(errstruc,miostruc, d_OBS%h).ne.0) then
+         !MD!     call utl_bomb_out(errstruc)
+         !MD!   endif
+            
+            call system(d_MOD%dercom) !Run the external derivative model 
             select case (cv_A%jacobian_format)
               case ('binary')
                 call readJCO(cv_A%jacfle, d_A)
               case ('ascii')
                 call readJAC(cv_A%jacfle, d_A)
             end select
-            !-- MIO read the ouput file results and update 
-            if(mio_read_model_output_files(errstruc,miostruc, d_OBS%h).ne.0) then
-              call utl_bomb_out(errstruc)
-            endif 
+             
         case (3) ! same as case 0, but linesearch parameters written as indicated above
             call system(d_MOD%com)
             !-- MIO read the ouput file results and update 
@@ -91,11 +95,12 @@ contains
               call utl_bomb_out(errstruc)        
             endif 
         case (4) ! Parallel Jacobian Using Condor Externally
-            call system(d_MOD%com) ! run the model once, forward, to have outputs with current parameters 
-            !-- MIO read the ouput file results and update 
-            if(mio_read_model_output_files(errstruc,miostruc, d_OBS%h).ne.0) then
-              call utl_bomb_out(errstruc) 
-            endif
+         !MD Done at the very beginning !
+         !MD!   call system(d_MOD%com) ! run the model once, forward, to have outputs with current parameters 
+         !MD!   !-- MIO read the ouput file results and update 
+         !MD!   if(mio_read_model_output_files(errstruc,miostruc, d_OBS%h).ne.0) then
+         !MD!     call utl_bomb_out(errstruc) 
+         !MD!   endif
             call bxd_write_param_file(cv_PAR,d_PAR) ! write the parameter file
             call system('python CondorATC.py')
             select case (cv_A%jacobian_format)
