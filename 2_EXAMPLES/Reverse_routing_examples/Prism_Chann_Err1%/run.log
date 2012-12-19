@@ -1,0 +1,98 @@
+// --------------------------------------------------
+// BASEMENT log file:
+// Version:  2.2 R958
+// bmc file: .\run.bmc
+// started:  Wed May 16 15:39:00 2012
+// --------------------------------------------------
+/*
+-> InputParser: reading input from bmc file '.\run.bmc'
+*/
+PROJECT {
+	title  = Prism
+	author = rm
+	date   = 10.8.2006
+}
+DOMAIN {
+	multiregion = Prism
+	PHYSICAL_PROPERTIES {
+		gravity      = 9.81
+		viscosity    = 0.000001004
+		rho_fluid    = 1000
+		rho_sediment = 2650
+	}
+	BASECHAIN_1D {
+		region_name = Prismatic
+		GEOMETRY {
+			type                = basement
+			file                = Section.bmg
+			cross_section_order = (CS000 CS001 CS002 CS003 CS004 CS005 CS006 CS007 CS008 CS009 CS010 CS011 CS012 CS013 CS014 CS015 CS016 CS017 CS018 CS019 CS020 CS021 CS022 CS023 CS024 CS025 CS026 CS027 CS028 CS029 CS030 CS031 CS032 CS033 CS034 CS035 CS036 CS037 CS038 CS039 CS040 CS041 CS042 CS043 CS044 CS045 CS046 CS047 CS048 CS049 CS050 CS051 CS052 CS053 CS054 CS055 CS056 CS057 CS058 CS059 CS060 CS061 CS062 CS063 CS064 CS065 CS066 CS067 CS068 CS069 CS070 CS071 CS072 CS073 CS074 CS075 CS076 CS077 CS078 CS079 CS080 CS081 CS082 CS083 CS084 CS085 CS086 CS087 CS088 CS089 CS090 CS091 CS092 CS093 CS094 CS095 CS096 CS097 CS098 CS099 CS100 CS101 CS102 CS103 CS104 CS105 CS106 CS107 CS108 CS109 CS110 CS111 CS112 CS113 CS114 CS115 CS116 CS117 CS118 CS119 CS120 CS121 CS122 CS123 CS124 CS125 CS126 CS127 CS128 CS129 CS130 CS131 CS132 CS133 CS134 CS135 CS136 CS137 CS138 CS139 CS140 CS141 CS142 CS143 CS144 CS145 CS146 CS147 CS148 CS149 CS150 CS151 CS152 CS153 CS154 CS155 CS156 CS157 CS158 CS159 CS160 CS161 CS162 CS163 CS164 CS165 CS166 CS167 CS168 CS169 CS170 CS171 CS172 CS173 CS174 CS175 CS176 CS177 CS178 CS179 CS180 CS181 CS182 CS183 CS184 CS185 CS186 CS187 CS188 CS189 CS190 CS191 CS192 CS193 CS194 CS195 CS196 CS197 CS198 CS199 CS200 )
+			dump_crosssections  = no
+		}
+		HYDRAULICS {
+			BOUNDARY {
+				type                 = hydrograph
+				string               = upstream
+				file                 = Onda_Input.txt
+				precision            = 0.0001
+				number_of_iterations = 100
+				slope                = 1.
+			}
+			BOUNDARY {
+				type   = hqrelation
+				string = downstream
+				slope  = 1.
+			}
+			INITIAL {
+				type = fileinput
+				file = Initial.txt
+			}
+			FRICTION {
+				type                = strickler
+				default_friction    = 30
+				grain_size_friction = no
+			}
+			PARAMETER {
+				total_run_time        = 54000
+				initial_time_step     = 0.5
+				CFL                   = 1.
+				minimum_water_depth   = 0.001
+				maximum_time_step     = 10
+				stretch_boundary_elem = yes
+				riemann_solver        = roe
+				simulation_scheme     = explicit
+				SECTION_COMPUTATION {
+					type            = table
+					min_interval    = 0.0010
+					max_interval    = 0.1000
+					internal_levees = on
+				}
+			}
+		}
+		OUTPUT {
+			output_time_step  = 54000
+			console_time_step = 54000
+			SPECIAL_OUTPUT {
+				type             = monitor
+				output_time_step = 300
+				cross_sections   = ( CS200 )
+				Q                = (time)
+			}
+		}
+	}
+}
+
+/*
+-> Domain: Input file has been successfully parsed and passed preliminary 
+   validation
+-> OpenMP: Computation is executed sequentially
+-> Domain Initialized
+-> initialize domain done
+-> initialize networkcommunication done
+-> Initialization of SubDomain 'Prismatic'
+-> InputParser: reading input from bmc file '.\Section.bmg'
+-> Grid: building grid using 201 cross sections
+-> Domain: Starting time loop
+TIME =  5.400000e+004	Time Step =   1.000000e+001 (CS: ) (SD: Prismatic)
+-> Domain: Run Time of the simulation= 1.16 sec
+
+End of program BASEMENT.
