@@ -4,7 +4,7 @@ import py2exe, sys, os
 sys.argv.append('py2exe')
 
 setup(
-	console=['matplotlib_test.py'],
+	console=['pst_generator.py'],
 	zipfile= None,
 	options = {
 		  "py2exe":{
