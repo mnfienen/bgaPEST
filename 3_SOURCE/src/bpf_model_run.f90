@@ -70,7 +70,7 @@ contains
             !-- create PEST input files and run PEST          
             call bxd_write_param_file(cv_PAR,d_PAR) ! write the parameter file
             call system('pst_generator.exe')        ! create the necessary PEST control file
-            call system('run_pest_scratch.bat')     ! run PEST externally for derivatives
+            call system('pest scratch.pst')     ! run PEST externally for derivatives
             call readJCO('scratch.jco', d_A)
         case (2) ! dercom alternative Jacobian
          !MD Done at the very beginning !
