@@ -9,8 +9,8 @@ Approaches in Highly Parameterized Inversion: bgaPEST, a Bayesian Geostatistical
 Implementation With PEST—Documentation and Instructions
 By Michael N. Fienen, Marco D’Oria, John E. Doherty, and Randall J. Hunt
 Techniques and Methods, Book 7, Section C9
-Published 2012
-http://pubs.usgs.gov/tm/tm7c9
+Published 2013
+http://pubs.usgs.gov/tm/07/c09
 
 GENERAL INSTRUCTIONS:
 1) Create an input file, following the documentation, with the .bgp extension
