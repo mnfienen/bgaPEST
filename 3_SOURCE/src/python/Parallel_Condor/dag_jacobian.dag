@@ -1,5 +1,5 @@
 # Jacobian run using a one-node DAG to run Condor
 
 JOB A condor_jacobian.sub
-SCRIPT PRE A jacobian_pre.sh
-SCRIPT POST A jacobian_post.sh
+SCRIPT PRE A python jacobian_pre.py
+SCRIPT POST A python jacobian_post.py
